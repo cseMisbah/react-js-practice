@@ -20,9 +20,9 @@ function App() {
   return (
     <div>
       <h1 className="headingStyle">Todo App</h1>
-      <Card />
-      <Card />
-      <Card />
+      <Card titleText="call mother" descText="this is desc1" />
+      <Card titleText="call father" descText="this is desc2" />
+      <Card titleText="call wife" descText="this is desc3" />
 
       <h1>{/*Nested lists*/}</h1>
       {/*users.map((user, index) => (
