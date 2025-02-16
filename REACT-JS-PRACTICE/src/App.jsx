@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 import "./App.css";
-
+import Card from "./components/CARD/index";
+/*
 const users = [
   {
     fullName: "Anisul Islam",
@@ -14,12 +15,17 @@ const users = [
     phones: [{ home: "093585" }, { office: "347598357" }],
   },
 ];
-
+*/
 function App() {
   return (
     <div>
-      <h1>Nested lists</h1>
-      {users.map((user, index) => (
+      <h1 className="headingStyle">Todo App</h1>
+      <Card />
+      <Card />
+      <Card />
+
+      <h1>{/*Nested lists*/}</h1>
+      {/*users.map((user, index) => (
         <article key={index}>
           <h3>Fullname :{user.fullName}</h3>
           <p>Age : {user.age}</p>
@@ -30,7 +36,7 @@ function App() {
           </div>{" "}
           )
         </article>
-      ))}
+      ))*/}
     </div>
   );
 }
