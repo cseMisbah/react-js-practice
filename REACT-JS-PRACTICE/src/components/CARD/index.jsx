@@ -8,13 +8,13 @@ const dateName = date.getDate();
 const monthName = date.getMonth();
 const currentYear = date.getFullYear();
 */
-export const index = (props) => {
+export const index = ({ item }) => {
   //console.log(props);
-  const { titleText, descText } = props;
+  const { title, desc } = item;
   return (
     <div className="card">
-      <h1 className="cardTitle">{titleText}</h1>
-      <p className="cardDesc">{descText}</p>
+      <h1 className="cardTitle">{title}</h1>
+      <p className="cardDesc">{desc}</p>
       <p className="cardFooter">
         {/*dateName + "/" + monthName + "/" + currentYear*/}
       </p>

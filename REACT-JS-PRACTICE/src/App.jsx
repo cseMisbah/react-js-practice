@@ -1,8 +1,28 @@
 import { useState } from "react";
+import List from "./components/Uniquelist/List";
 
-import "./App.css";
-import Card from "./components/CARD/index";
+//import "./App.css";
+//import Card from "./components/CARD/index";
+//import Data from "./Data.json";
+
+function App() {
+  return (
+    <div>
+      <List></List>
+    </div>
+  );
+}
+
+export default App;
+
 /*
+ //let items = [];
+  // items.push(Data);
+  // console.log(items);
+<h1 className="headingStyle">Todo App</h1>
+      {Data.map((item, index) => (
+        <Card item={item} key={index}></Card>
+      ))}
 const users = [
   {
     fullName: "Anisul Islam",
@@ -15,17 +35,27 @@ const users = [
     phones: [{ home: "093585" }, { office: "347598357" }],
   },
 ];
-*/
+
 function App() {
+  let items = [];
+
+  for (let x = 0; x < Data.length; x++) {
+    items.push(<Card titleText={Data[x].title} descText={Data[x].desc} />);
+  }
+
   return (
     <div>
       <h1 className="headingStyle">Todo App</h1>
-      <Card titleText="call mother" descText="this is desc1" />
-      <Card titleText="call father" descText="this is desc2" />
-      <Card titleText="call wife" descText="this is desc3" />
+      {items}
+    </div>
+  );
+}
 
-      <h1>{/*Nested lists*/}</h1>
-      {/*users.map((user, index) => (
+export default App;
+
+   
+      <h1>{Nested lists}</h1>
+   {/*users.map((user, index) => (
         <article key={index}>
           <h3>Fullname :{user.fullName}</h3>
           <p>Age : {user.age}</p>
@@ -36,9 +66,5 @@ function App() {
           </div>{" "}
           )
         </article>
-      ))*/}
-    </div>
-  );
-}
-
-export default App;
+      ))}
+*/
