@@ -1,10 +1,10 @@
-import React from "react";
-import State from "./components/State/State";
+import React, { useState } from "react";
+import From from "./FORM/index1";
 
 const App = () => {
   return (
     <div>
-      <State></State>
+      <From />
     </div>
   );
 };
