@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import From from "./FORM/index1";
+import Home from "./STATE_LIFTING/Home";
 
 const App = () => {
   return (
     <div>
-      <From />
+      <Home></Home>
     </div>
   );
 };
