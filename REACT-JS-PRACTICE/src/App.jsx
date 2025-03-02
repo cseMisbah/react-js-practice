@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Signup from "../FORM_VALIDATION/Signup";
 import { useFormik } from "formik";
+import * as yup from "yup";
 
 //name,email,password
 
@@ -12,11 +13,27 @@ const App = () => {
       email: "",
       password: "",
     },
+    validationSchema: yup.object({
+      name: yup
+        .string()
+        .min(2, "name must have at least 3 characters")
+        .required(),
+      email: yup
+        .string()
+        .min(6, "name must have at least 6 characters")
+        .required(),
+      password: yup
+        .string()
+        .min(6, "name must have at least 6 characters")
+        .required(),
+    }),
     onSubmit: (values, { resetForm }) => {
       console.log(values);
       resetForm({ values: "" });
     },
   });
+
+  console.error(formik.errors);
 
   return (
     <div>
@@ -31,7 +48,10 @@ const App = () => {
             value={formik.values.name}
             onChange={formik.handleChange}
           />
+          {/*formik.errors.name && <span>{formik.errors.name}</span>*/}
+          {formik.touched.name && <span>{formik.errors.name}</span>}
         </div>
+
         <div>
           <label htmlFor="email">Email :</label>
           <input
@@ -41,6 +61,8 @@ const App = () => {
             onChange={formik.handleChange}
             value={formik.values.email}
           />
+          {/*formik.errors.email && <span>{formik.errors.email}</span>*/}
+          {formik.touched.email && <span>{formik.errors.email}</span>}
         </div>
         <div>
           <label htmlFor="password">Password :</label>
@@ -51,6 +73,8 @@ const App = () => {
             onChange={formik.handleChange}
             value={formik.values.password}
           />
+          {/*formik.errors.password && <span>{formik.errors.password}</span>*/}
+          {formik.touched.password && <span>{formik.errors.password}</span>}
         </div>
         <div>
           <button type="submit">Sign Up</button>
