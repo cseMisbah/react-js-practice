@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Toggle from "../TOGGLE/Toggle";
+import Toastify from "./TOASTIFY/Toastify";
 
 const App = () => {
   return (
     <div>
-      <Toggle></Toggle>
+      <h1>Todo App</h1>
+      <Toastify></Toastify>
     </div>
   );
 };
