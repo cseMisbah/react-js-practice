@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Toastify from "./TOASTIFY/Toastify";
+
+import DataFetch from "./CUSTOMHOOKS/DataFetch";
 
 const App = () => {
   return (
     <div>
-      <h1>Todo App</h1>
-      <Toastify></Toastify>
+      <DataFetch></DataFetch>
     </div>
   );
 };

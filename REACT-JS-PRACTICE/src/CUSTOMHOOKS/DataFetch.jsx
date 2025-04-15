@@ -6,15 +6,14 @@ const DataFetch = () => {
     "https://jsonplaceholder.typicode.com/todos"
   );
 
-  const loadingMessage = <p>todos are loading</p>;
+  const loadingMessage = <p>Todo is loading</p>;
   const errorMessage = <p>{error}</p>;
 
   const todosElement =
     data &&
     data.map((todo) => {
-      return <p key={todo.id}> {todo.title} </p>;
+      return <p key={todo.id}>{todo.title}</p>;
     });
-
   return (
     <div>
       <h1>Todos</h1>
