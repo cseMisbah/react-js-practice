@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-
-import DataFetch from "./CUSTOMHOOKS/DataFetch";
+import UseRefExample from "./components/USEREF_HOOK/UseRefExample";
 
 const App = () => {
   return (
     <div>
-      <DataFetch></DataFetch>
+      <UseRefExample></UseRefExample>
     </div>
   );
 };

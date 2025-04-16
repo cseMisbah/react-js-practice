@@ -3,10 +3,9 @@ import User from "./User";
 
 const Users = () => {
   const [user, setUser] = useState({
-    id: 3982789,
-    name: "Misbah",
+    id: 1302020017,
+    name: "anisul islam",
   });
-
   return (
     <div>
       <User user={user}></User>
