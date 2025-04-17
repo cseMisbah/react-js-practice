@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import UseRefExample from "./components/USEREF_HOOK/UseRefExample";
+import UseReducer from "./components/USEREDUCER_HOOK/Index";
 
 const App = () => {
   return (
     <div>
-      <UseRefExample></UseRefExample>
+      <UseReducer></UseReducer>
     </div>
   );
 };
