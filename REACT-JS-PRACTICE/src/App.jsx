@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import UseReducer from "./components/USEREDUCER_HOOK/Index";
+import Component1 from "./components/USE-CONTEXT/Component1";
 
 const App = () => {
   return (
     <div>
-      <UseReducer></UseReducer>
+      <Component1></Component1>
     </div>
   );
 };
