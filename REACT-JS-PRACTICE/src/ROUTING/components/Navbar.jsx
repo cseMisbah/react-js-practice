@@ -1,10 +1,9 @@
 import React from "react";
-//import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="nav">
+    <nav>
       <NavLink to="/" className="nav-link">
         Home
       </NavLink>
@@ -19,10 +18,10 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 /*
-const Navbar = () => {
-  return (
-    <nav className="nav">
+  
+    <nav>
       <Link to="/" className="nav-link">
         Home
       </Link>
@@ -33,8 +32,5 @@ const Navbar = () => {
         Blogs
       </Link>
     </nav>
-  );
-};
-
-export default Navbar;
-*/
+    
+    */

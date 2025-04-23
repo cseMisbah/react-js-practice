@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
+import "./App.css";
+import Index from "./ROUTING/PROTECTED-ROUTING/Routes/Index";
 
 const App = () => {
   return (
     <div>
-      <h1>Welcome</h1>
+      <Index></Index>
     </div>
   );
 };
