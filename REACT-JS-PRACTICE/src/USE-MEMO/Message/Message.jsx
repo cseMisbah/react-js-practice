@@ -1,7 +1,13 @@
-import React, { useState } from "react";
-import "./App.css";
-import Message from "./USE-MEMO/Message/Message";
+import React, { memo } from "react";
 
+const Message = () => {
+  console.log("message is rendering");
+  return <p>send 0 messages</p>;
+};
+
+export default Message;
+
+/*
 const App = () => {
   const [count, setCount] = useState(0);
   console.log("app is rendering ");
@@ -21,3 +27,4 @@ const App = () => {
 };
 
 export default App;
+*/
