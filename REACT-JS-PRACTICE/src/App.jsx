@@ -1,21 +1,12 @@
 import React, { useState } from "react";
 import "./App.css";
-import Message from "./USE-MEMO/Message/Message";
+
+import Index from "./USE-MEMO/Index";
 
 const App = () => {
-  const [count, setCount] = useState(0);
-  console.log("app is rendering ");
   return (
     <div>
-      <h1>count : {count}</h1>
-      <button
-        onClick={() => {
-          setCount(count + 1);
-        }}
-      >
-        increment
-      </button>
-      <Message></Message>
+      <Index></Index>
     </div>
   );
 };
